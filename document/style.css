@@ -1,0 +1,274 @@
+/**
+* ! Changing default styles of the browser
+**/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+header{
+  position: static;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 900;
+  background: #bec2c6;
+  padding: 1.5rem 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 .5rem 1rem rgba(220, 215, 215, 0.1);
+}
+header .logo{
+  font-size: 1.5rem;
+  color: #dbd1d1;
+  font-weight: 500;
+}
+header .navbar a{
+  font-size: 1rem;
+  color: #efebeb;
+  margin: 0 1.5rem;
+}
+header .navbar a:hover{
+  color: orangered;
+}
+header .icons a{
+  font-size: 1.5rem;
+  color: #000;
+  margin-left: 1rem;
+}
+header .icons a:hover{
+  color: orangered;
+}
+
+
+
+i {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/**
+* ! Navbar STyles are here
+**/
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #212529;
+  color: white;
+  padding: 25px 60px;
+  margin-bottom: 30px;
+}
+
+.cart {
+  position: relative;
+  background-color: #fff;
+  color: #212529;
+  font-size: 30px;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.cartAmount {
+  position: absolute;
+  top: -15px;
+  right: -10px;
+  font-size: 16px;
+  background-color: red;
+  color: white;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+/**
+* ! Shop items styles are here
+**/
+
+.shop {
+  display: grid;
+  grid-template-columns: repeat(4, 223px);
+  gap: 30px;
+  justify-content: center;
+}
+
+@media (max-width: 1000px) {
+  .shop {
+    grid-template-columns: repeat(2, 223px);
+  }
+}
+
+@media (max-width: 500px) {
+  .shop {
+    grid-template-columns: repeat(1, 223px);
+  }
+}
+
+.item {
+  border: 2px solid #212529;
+  border-radius: 4px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+}
+
+.price-quantity {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  font-size: 16px;
+}
+
+.bi-dash-lg {
+  color: red;
+}
+
+.bi-plus-lg {
+  color: green;
+}
+
+/**
+* ! style rules for label and some buttons
+**/
+
+.text-center {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.HomeBtn,
+.checkout,
+.removeAll {
+  background-color: #212529;
+  color: white;
+  border: none;
+  padding: 6px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.checkout {
+  background-color: green;
+}
+.removeAll {
+  background-color: red;
+}
+.bi-x-lg {
+  color: red;
+  font-weight: bold;
+}
+
+/**
+* ! style rules for shopping-cart
+**/
+
+.shopping-cart {
+  display: grid;
+  grid-template-columns: repeat(1, 320px);
+  justify-content: center;
+  gap: 15px;
+}
+
+/**
+* ! style rules for cart-item
+**/
+
+.cart-item {
+  border: 2px solid #212529;
+  border-radius: 5px;
+  display: flex;
+}
+
+.title-price-x {
+  width: 195px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 2px solid red; */
+}
+
+.title-price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cart-item-price {
+  background-color: #212529;
+  color: white;
+  border-radius: 4px;
+  padding: 3px 6px;
+}
+
+
+
+
+.news{
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+.news .content{
+  text-align: center;
+  border: .1rem solid rgba(0, 0, 0, .1);
+  border-radius: .5rem;
+  background: #f9f9f9;
+  padding: 2rem;
+}
+.news .content h3{
+  font-size: 2.5rem;
+  color: #000;
+}
+.news .content p{
+  font-size: 1.5rem;
+  color: #666;
+  margin: 1rem auto;
+  max-width: 60rem;
+}
+.news .content form{
+  margin:  1rem auto;
+  max-width: 50rem;
+  display: flex;
+}
+
+.news .content form .email{
+  width: 100%;
+  font-size: 1.7rem;
+  text-transform: none;
+  color: #333;
+  padding: 1rem;
+  border: .2rem solid #000;
+  border-right: none;
+  margin-top: 1rem;
+}
+.news .content form .btn{
+  border-radius: none;
+}
+.cridet .box{
+  padding: .1rem;
+  text-align: center;
+}
+.cridet .box h3{
+  font-size: 2rem;
+}
